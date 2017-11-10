@@ -33,7 +33,7 @@
           ?>
           <div class="col-3">
           <?php 
-             include '../config/view_estados_graph.php';
+             // include '../config/view_estados_graph.php';
           ?>
           </div>
           <div class="col-6">
