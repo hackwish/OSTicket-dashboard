@@ -1,7 +1,7 @@
 <?php 
 
-// include 'controller_select_tipo_req.php';
-include 'controller_select_tipo_req_sistemas.php';
+include 'controller_select_tipo_req.php';
+// include 'controller_select_tipo_req_sistemas.php';
 
 //CABECERA
 		echo "<table id='example1' class='table table-bordered table-striped'>
