@@ -9,48 +9,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 
   </head>
   <body>
 <div class="container-fluid">
-  <div class="row" >
-    <div class="col-12">
-      <br>
-    </div>
-  </div>
   <div class="row">
-    <div class="col-3">
-        <?php 
-           include '../config/view_tipo_req.php';
-        ?>
-    </div>
+    <br>
+  </div>
+
+  <div class="row">
 
     <div class="col">
+      <!-- GLOBAL STATS --> 
       <div class="row" align="center">
           <?php 
              include '../config/view_stats_alert.php';
           ?>
-          <div class="col-3">
+      </div>  
+<!--           <div class="col-3">
           <?php 
              // include '../config/view_estados_graph.php';
           ?>
-          </div>
-          <div class="col-6">
-          </div>
-      </div>  
+          </div> -->
     </div>   
+
+    <!-- TIPO REQUERIMIENTO --> 
+    <div class="col col-lg-3">
+        <?php 
+           include '../config/view_tipo_req.php';
+        ?>
+    </div>
   </div>
+
   <div class="row">
-    <div  class="col">
+    <br>
+  </div>
+
+  <!-- TOP 10 ULTIMAS SOLICITUDES --> 
+  <div class="row">
+    <div class="col">
       <?php 
-         include '../config/view_estados_top10_req.php';
+        include '../config/view_estados_top10_req.php';
       ?>
     </div>
-    
   </div>
-
-
 </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

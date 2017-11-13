@@ -6,7 +6,7 @@ include 'controller_select_stats_alert.php';
     while($row = $result_atrasados->fetch_assoc()) {
     	if ($row['ticket']==0) {
     		echo "      
-	        <div class='col-2'>
+	        <div class='col'>
 		          <div class='alert alert-info' role='alert'>
 		              <h5 class='alert-heading'>ATRASADOS</h5>
 		              <p class='mb-0'>TOTAL</p>
@@ -16,7 +16,7 @@ include 'controller_select_stats_alert.php';
     	}
     	else{
     		echo "      
-	        <div class='col-2'>
+	        <div class='col'>
 		          <div class='alert alert-danger' role='alert'>
 		              <h5 class='alert-heading'>ATRASADOS</h5>
 		              <p class='mb-0'>TOTAL</p>
@@ -29,7 +29,7 @@ include 'controller_select_stats_alert.php';
 
     while($row = $result_abiertos_hoy->fetch_assoc()) {
        	echo "      
-	        <div class='col-2'>
+	        <div class='col'>
 		          <div class='alert alert-warning' role='alert'>
 		              <h5 class='alert-heading'>ABIERTOS</h5>
 		              <h1>" . $row['ticket']. "</h1>
@@ -47,7 +47,7 @@ include 'controller_select_stats_alert.php';
 
     while($row = $result_cerrados_hoy->fetch_assoc()) {
        	echo "      
-	        <div class='col-2'>
+	        <div class='col'>
 		          <div class='alert alert-success' role='alert'>
 		              <h5 class='alert-heading'>CERRADOS</h5>
 		              <h1>" . $row['ticket']. "</h1>
@@ -64,7 +64,7 @@ include 'controller_select_stats_alert.php';
 
     while($row = $result_total_hoy->fetch_assoc()) {
        	echo "      
-	        <div class='col-2'>
+	        <div class='col'>
 		          <div class='alert alert-primary' role='alert'>
 		              <h5 class='alert-heading'>TOTAL</h5>
 		              <h1>" . $row['ticket']. "</h1>
