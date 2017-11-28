@@ -1,6 +1,7 @@
 <?php 
 
 include 'controller_select_stats_alert.php';
+include 'controller_select_atrasados.php';
 // include 'controller_select_stats_alert_sistemas.php';
 
 //CONTENIDO
@@ -22,9 +23,27 @@ include 'controller_select_stats_alert.php';
 		              <h5 class='alert-heading'>ATRASADOS</h5>
 		              <p class='mb-0'>TOTAL</p>
 		              <h1>" . $row['ticket']. "</h1>
-		          </div>
-	        </div>";
-    	}
+		              <hr>
+		            	<table id='example1' class='table table-sm table-responsive'>";
+
+					//CONTENIDO
+					    while($row = $result_atrasados_users->fetch_assoc()) {
+					        echo "<tbody>
+						                <tr>
+						                   <td>" . $row['username']. "</td>
+						                   <td>" . $row['cant']. "</td>
+						                </tr>
+					              </tbody>";
+					        }
+
+					// PIE
+							echo "<tfoot>
+					              </tfoot>
+					    </table>
+
+				  </div>
+			</div>";
+	    	}
 
     }
 
