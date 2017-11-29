@@ -1,7 +1,7 @@
 <?php 
 
-// include 'controller_select_top10_req.php';
-include 'controller_select_top10_req_sistemas.php';
+include 'controller_select_top10_req.php';
+//include 'controller_select_top10_req_sistemas.php';
 
 //CABECERA
 		echo "<table id='example1' class='table table-bordered table-striped table-hover'>
