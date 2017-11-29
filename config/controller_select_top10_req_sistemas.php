@@ -12,7 +12,7 @@ inner join osticket.ost_help_topic top
 on tkt.topic_id=top.topic_id
 inner join osticket.ost_ticket__cdata cda
 on tkt.ticket_id=cda.ticket_id
-WHERE tkt.number like '%SIST%'
+WHERE tkt.staff_id in(1,2,3,4,5)
 order by tkt.ticket_id desc
 limit 10;";
 

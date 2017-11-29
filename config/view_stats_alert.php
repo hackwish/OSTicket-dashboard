@@ -1,8 +1,10 @@
 <?php 
 
-include 'controller_select_stats_alert.php';
-include 'controller_select_atrasados.php';
-// include 'controller_select_stats_alert_sistemas.php';
+//include 'controller_select_stats_alert.php';
+//include 'controller_select_atrasados.php';
+
+include 'controller_select_stats_alert_sistemas.php';
+include 'controller_select_atrasados_sistemas.php';
 
 //CONTENIDO
     while($row = $result_atrasados->fetch_assoc()) {

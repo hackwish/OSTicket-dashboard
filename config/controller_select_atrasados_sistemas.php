@@ -7,6 +7,7 @@
 		left join osticket.ost_staff stf
 		on tkt.staff_id = stf.staff_id
 		where tkt.isoverdue=1 
+		and tkt.staff_id in(1,2,3,4,5)
 		group by tkt.staff_id 
 		order by cant desc;";
 
